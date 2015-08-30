@@ -41,7 +41,7 @@ public class ConnectDB {
         return datastore;
     }
 
-    public MongoIterable<String> getDBNames(){
+    public MongoIterable<String> getDBNames() {
         return mongoClient.listDatabaseNames();
     }
 
@@ -51,7 +51,7 @@ public class ConnectDB {
         mongoClient.close();
     }
 
-    public void dropDB(){
+    public void dropDB() {
         mongoClient.dropDatabase(mDB);
     }
 }
